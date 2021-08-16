@@ -6,6 +6,7 @@ import 'package:movie_app/addMovie.dart';
 import 'package:movie_app/model/quotes.dart';
 import 'package:movie_app/utils/movieProvider.dart';
 import 'package:movie_app/utils/quotesUtil.dart';
+import 'package:movie_app/utils/sizeconfig.dart';
 import 'package:movie_app/watchNowMovieList.dart';
 import 'package:movie_app/watchedMovieList.dart';
 import 'package:provider/provider.dart';
@@ -23,6 +24,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return ChangeNotifierProvider(
@@ -98,11 +100,11 @@ class _HomeState extends State<Home> {
             child: Column(
               children: [
                 Container(
-                  padding: EdgeInsets.all(4),
-                  height: height * 0.3,
+                  //padding: EdgeInsets.all(4),
+                  height: SizeConfig.safeBlockVertical * 37,
                   child: Column(children: [
                     Container(
-                      height: height * 0.23,
+                      height: SizeConfig.safeBlockVertical *30,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -126,7 +128,7 @@ class _HomeState extends State<Home> {
                           (_isSignIn)
                               ? Container(
                             padding: EdgeInsets.all(8),
-                                  width: width * 0.5,
+
                                   child: Align(
                                     alignment: Alignment.centerLeft,
                                     child: Text(
@@ -138,7 +140,7 @@ class _HomeState extends State<Home> {
                                   ))
                               : Center(
                                   child: Container(
-                                    width: width * 0.5,
+                                   // width: width * 0.5,
                                     child: ElevatedButton(
                                       style: ButtonStyle(
                                           backgroundColor:
