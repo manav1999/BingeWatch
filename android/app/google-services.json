@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "769928691389",
+    "project_id": "bingewatch-8cc1e",
+    "storage_bucket": "bingewatch-8cc1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769928691389:android:ebc302e56d6db93d0b01d4",
+        "android_client_info": {
+          "package_name": "com.example.movie_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769928691389-64hq2eqvtoujo9m04hg44kq57goenr1m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.movie_app",
+            "certificate_hash": "e71bbb496e3fabe8ccbfd047574ee7e6f4790e24"
+          }
+        },
+        {
+          "client_id": "769928691389-ta2rusbjrpdh728ib26sbtfaof4jfd9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkdE3bQVCcFdKQN7cv4aVXVUcrcvGf9DI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769928691389-ta2rusbjrpdh728ib26sbtfaof4jfd9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
